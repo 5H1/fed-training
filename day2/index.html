@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .internal_container{
+            padding: 10px;
+            border: 1px solid black;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #ead0d0;
+        }
+        .title{
+            color: red;
+        }
+        .description{
+            color: #0d0d0dfe;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="padding: 10px; border: 1px solid black; margin: 20px; border-radius: 10px; background-color: #f4e3d2;">
+            <h1 style="color: rgb(201, 141, 29);"> INLINE CSS </h1>
+            <p style="color: rgb(0, 168, 235);"> Styles are applied directly to a specific HTML element using the style attribute. </p>
+        </div>
+
+        <div class="internal_container">
+            <h1 class="title"> INTERNAL CSS </h1>
+            <p class="description"> Styles are written inside the "style" tag within the "head" section of the HTML file. </p>
+        </div>
+
+        <div class="external_container">
+            <h1 class="title"> EXTERNAL CSS </h1>
+            <p class="description"> Styles are kept in a separate .css file and linked to the HTML file using the <link> tag.</p>
+        </div>
+
+        <div class="specificity_container">
+            <h1 class="title"> SPECIFICITY </h1>
+            <p class="description"> Inline styles > Internal CSS = External CSS (when comparing same selectors). </p>
+            <p class="description"> Between internal & external → whichever comes later in the cascade (order of loading) will apply. </p>
+        </div>
+    </div>
+
+</body>
+</html>
