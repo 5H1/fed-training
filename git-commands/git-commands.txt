@@ -1,0 +1,25 @@
+GIT HUB COMMANDS - DOCUMENTATION.
+
+1. Git clone : command - git clone
+
+Usage : Creating a local copy of a remote repository on our computer.
+
+2. Git Fetch : command - git fetch
+
+Usage : It downloads updates from the remote repository to our local repository.
+
+3. Git Checkout : command - git checkout <branch-name>
+
+Usage : Helps in changing branches or restoring files.
+
+4. Git Pull : command - git pull
+
+Usage : It will fetch changes from the remorse repository and add them into our current branch.
+
+5. Git Commit : command - git commit -m “Commit Message”
+
+Usage : It will save the changes to the repository with a message.
+
+6. Git push : command - git push origin
+
+Usage : It will send our local repository changes to the remote repository.
