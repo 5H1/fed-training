@@ -1,49 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day 2</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        .internal_container{
+      .internal_container {
+        padding: 10px;
+        border: 1px solid black;
+        margin: 20px auto;
+        border-radius: 10px;
+        background-color: #5464f270;
+      }
+      .title {
+        color: #0a22eef7;;
+      }
+      .description {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div
+          style="
             padding: 10px;
             border: 1px solid black;
-            margin: 20px;
+            margin: 20px auto;
             border-radius: 10px;
-            background-color: #ead0d0;
-        }
-        .title{
-            color: red;
-        }
-        .description{
-            color: #0d0d0dfe;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div style="padding: 10px; border: 1px solid black; margin: 20px; border-radius: 10px; background-color: #f4e3d2;">
-            <h1 style="color: rgb(201, 141, 29);"> INLINE CSS </h1>
-            <p style="color: rgb(0, 168, 235);"> Styles are applied directly to a specific HTML element using the style attribute. </p>
+            background-color: #4b5cf89e;"
+        >
+          <h1 style="color: #0a22eef7;">INLINE CSS</h1>
+          <p style="color: black">
+            <b>Styles are applied directly to a specific HTML element using the
+            style attribute.</b>
+          </p>
         </div>
 
         <div class="internal_container">
-            <h1 class="title"> INTERNAL CSS </h1>
-            <p class="description"> Styles are written inside the "style" tag within the "head" section of the HTML file. </p>
+          <h1 class="title">INTERNAL CSS</h1>
+          <p class="description">
+            Styles are written inside the "style" tag within the "head" section
+            of the HTML file.
+          </p>
         </div>
 
         <div class="external_container">
-            <h1 class="title"> EXTERNAL CSS </h1>
-            <p class="description"> Styles are kept in a separate .css file and linked to the HTML file using the <link> tag.</p>
+          <h1 class="title">EXTERNAL CSS</h1>
+          <p class="description">
+            Styles are kept in a separate .css file and linked to the HTML file
+            using the <link /> tag.
+          </p>
         </div>
 
         <div class="specificity_container">
-            <h1 class="title"> SPECIFICITY </h1>
-            <p class="description"> Inline styles > Internal CSS = External CSS (when comparing same selectors). </p>
-            <p class="description"> Between internal & external → whichever comes later in the cascade (order of loading) will apply. </p>
+          <h1 class="title">SPECIFICITY</h1>
+          <p class="description">
+            Inline styles > Internal CSS = External CSS (when comparing same
+            selectors).
+          </p>
+          <p class="description">
+            Between internal & external → whichever comes later in the cascade
+            (order of loading) will apply.
+          </p>
         </div>
+      </div>
+      <div class="table_container">
+        <h1 class="table-title">Core Web Technologies Comparison</h1>
+        <table>
+          <thead class="table-heading">
+            <tr class="table-heading-row">
+              <th>POINT OF COMPARISION</th>
+              <th>HTML</th>
+              <th>CSS</th>
+              <th>JS</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="table-row">
+              <td class="table-poc">Role</td>
+              <td class="table-html-content">Structure of webpage</td>
+              <td class="table-css-content">Styling & presentation</td>
+              <td class="table-js-content">Functionality & interactivity</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Full Form</td>
+              <td class="table-html-content">HyperText Markup Language</td>
+              <td class="table-css-content">Cascading Style Sheets</td>
+              <td class="table-js-content">JavaScript</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Nature</td>
+              <td class="table-html-content">Markup language</td>
+              <td class="table-css-content">Style sheet language</td>
+              <td class="table-js-content">Programming language</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Syntax</td>
+              <td class="table-html-content">Uses tags p,div</td>
+              <td class="table-css-content">
+                Uses selectors & properties (color: red;)
+              </td>
+              <td class="table-js-content">Uses functions, variables, logic</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Browser Interpretation</td>
+              <td class="table-html-content">Defines content elements</td>
+              <td class="table-css-content">Defines how content looks</td>
+              <td class="table-js-content">Defines how content behaves</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Execution</td>
+              <td class="table-html-content">Rendered directly by browser</td>
+              <td class="table-css-content">Applied after HTML is parsed</td>
+              <td class="table-js-content">Executed by JavaScript engine</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Dependency</td>
+              <td class="table-html-content">Works independently</td>
+              <td class="table-css-content">Needs HTML to apply styles</td>
+              <td class="table-js-content">Needs HTML/CSS to manipulate</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Output</td>
+              <td class="table-html-content">Static structure</td>
+              <td class="table-css-content">Visual design</td>
+              <td class="table-js-content">Dynamic behavior</td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Purpose</td>
+              <td class="table-html-content">Skeleton of a webpage</td>
+              <td class="table-css-content">Decoration / Look & Feel</td>
+              <td class="table-js-content">
+                Brain of webpage (logic, actions)
+              </td>
+            </tr>
+            <tr class="table-row">
+              <td class="table-poc">Storage / State Handling</td>
+              <td class="table-html-content">
+                Cannot store data or state; only displays content.
+              </td>
+              <td class="table-css-content">
+                Cannot store data; only styles content.
+              </td>
+              <td class="table-js-content">
+                Can store and manage data (e.g., using variables, localStorage,
+                sessionStorage, cookies).
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
